@@ -144,6 +144,11 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# Report directories
+allure-results/
+allure-report/
+test-results/
+
 ### Node Patch ###
 # Serverless Webpack directories
 .webpack/
