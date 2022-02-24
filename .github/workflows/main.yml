@@ -33,7 +33,12 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo apt-get -qq update
+          sudo apt-get -qq upgrade
+          sudo apt-get -yq autoremove
+          npm ci
 
       - name: Run WebdriverIO tests
         run: npm run wdio
