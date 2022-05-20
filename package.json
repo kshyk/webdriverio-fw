@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.23.0",
-    "@typescript-eslint/parser": "^5.23.0",
+    "@typescript-eslint/eslint-plugin": "^5.25.0",
+    "@typescript-eslint/parser": "^5.25.0",
     "@wdio/allure-reporter": "^7.19.7",
     "@wdio/cli": "^7.19.7",
     "@wdio/devtools-service": "^7.19.7",
@@ -14,11 +14,13 @@
     "eslint": "^8.15.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "trim-newlines": "^4.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.4",
     "wdio-chromedriver-service": "^7.3.2",
     "wdio-wait-for": "^2.2.6"
+  },
+  "overrides": {
+    "trim-newlines": "^4.0.2"
   },
   "scripts": {
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
